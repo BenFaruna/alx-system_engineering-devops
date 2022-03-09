@@ -59,3 +59,20 @@ File: 12-combinations
 13. Floats
 Write a script that prints a number with two decimal places, followed by a new line.
 File: 13-print_float
+
+14. Decimal to Hexadecimal
+Write a script that converts a number from base 10 to base 16.
+File: 100-decimal_to_hexadecimal
+   
+15. Everyone is a proponent of strong encryption
+Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+File: 101-rot13
+   
+16. The eggs of the brood need to be an odd number
+Write a script that prints every other line from the input, starting with the first line.
+File: 102-odd
+   
+17. I'm an instant star. Just add water and stir.
+Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
+File: 103-water_and_stir
+
