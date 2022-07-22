@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# simulates a clock
+
+hour=0
+while [ $hour -ne 13 ]
+	do
+	echo "Hour: $hour"
+
+	min=1
+	while [ $min -ne 60 ]
+		do
+		echo "$min"
+		min=$((min += 1))
+		done
+	hour=$((hour += 1))
+	done
+
