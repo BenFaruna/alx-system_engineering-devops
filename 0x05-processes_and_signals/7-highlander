@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# script that ingnores SIGTERM
+
+trap 'echo "I am invincible!!!"' SIGTERM
+while ((1))
+	do
+	echo "To infinity and beyond"
+	sleep 2
+	done
+
