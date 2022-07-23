@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# script runs forever and prints different messages for different signals
+
+FILE="/var/run/myscript.pid"
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm $FILE; exit' SIGQUIT
+echo $$ > $FILE
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
+
