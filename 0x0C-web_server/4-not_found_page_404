@@ -5,8 +5,7 @@
 apt-get update
 apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.html
-sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://moz.com/learn/seo/redirection permanent;' /etc/nginx/sites-available/default
+sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4\n\terror_page 404 /404.html' /etc/nginx/sites-available/default
 echo "Cest n'est pas une page" ? /var/www/html/404.html
-sed -i '/server_name _;/a error_page 404 /404.html;\nlocation = /404.html {\n root /var/www/html;\nintenal;\n}' /etc/nginx/sites-available/default
 service nginx restart
 
