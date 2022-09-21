@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# fix curl: (52) Empty replyy from server
+
+service apahe2 start
