@@ -16,3 +16,4 @@ echo "frontend load-balancer
         bind *:80
         mode http
         default_backend web-backend" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
