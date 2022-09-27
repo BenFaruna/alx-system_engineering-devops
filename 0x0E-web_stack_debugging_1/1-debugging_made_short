@@ -3,3 +3,4 @@
 service nginx stop
 ln -f -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
+pkill -SIGKILL -f "usr/sbin/nginx"
