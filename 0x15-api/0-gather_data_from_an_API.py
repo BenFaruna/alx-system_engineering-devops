@@ -28,7 +28,7 @@ def main():
     tasks_completed = 0
     for task in todo_data:
         if task.get('completed'):
-            todo = todo + '\t' + task.get('title') + '\n'
+            todo = todo + '\t ' + task.get('title') + '\n'
             tasks_completed += 1
 
     print("Employee {} is done with tasks({}/{}):"
