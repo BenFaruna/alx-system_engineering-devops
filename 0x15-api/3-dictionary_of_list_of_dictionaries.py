@@ -22,13 +22,13 @@ def main():
         user_data, todo_data = get_data(user_id)
 
         username = user_data.get('username')
-
+        user_dict[user_id] = []
         for task in todo_data:
-            user_dict[user_id] = [{
-                                   'username': username,
-                                   'task': task.get('title'),
-                                   'completed': task.get('completed'),
-                                  }]
+            user_dict[user_id].append({
+                                        'username': username,
+                                        'task': task.get('title'),
+                                        'completed': task.get('completed'),
+                                      })
 
     with open('todo_all_employees.json'.format(user_id), 'w') as f:
         csv_writer = json.dump(user_dict, f)

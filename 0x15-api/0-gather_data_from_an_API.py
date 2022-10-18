@@ -31,7 +31,7 @@ def main():
             todo = todo + '\t' + task.get('title') + '\n'
             tasks_completed += 1
 
-    print("Employee {} is done with({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(user_name, tasks_completed, tasks_num))
     print(todo, end='')
 
